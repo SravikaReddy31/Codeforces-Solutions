@@ -1,0 +1,26 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+		int count = 0;
+		int n = sc.nextInt();
+		while(n > 0) {
+		    if(n >= 5) {
+		        n -= 5;
+		    }
+		    else if(n >= 4) {
+		        n -= 4;
+		    }
+		    else if(n >= 3) {
+		        n -= 3;
+		    }
+		    else if(n >= 2) {
+		        n -= 2;
+		    } else {
+		        n -= 1;
+		    }
+		    count++;
+		}
+		System.out.println(count);
+	}
+}
